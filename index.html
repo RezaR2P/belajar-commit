@@ -3,12 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Anime</title>
   </head>
   <body>
-    <center><h1>Hello World</h1></center>
+    <header>
+      <img
+        src="img/renge.jpg"
+        alt="Logo"
+        style="border-radius: 50%"
+        width="100px"
+        height="100px"
+      />
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <a href="https://www.instagram.com/sjhdskd/">
+        <img
+          src="img/Nyanpasu.jpg"
+          alt="Renge"
+          style="width: 200px; height: 200px"
+      /></a>
+      <form action="">
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama" /><br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" /><br />
+        <label for="number">No HP</label>
+        <input
+          type="text"
+          name="number"
+          id="number"
+          pattern="\d*"
+          required
+        /><br />
+        <label for="komentar">Komentar</label>
+        <textarea name="komentar" id="komentar" cols="20" rows="2"></textarea
+        ><br />
+        <input type="submit" value="Kirim" /><br />
+      </form>
+
+      <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>Number</th>
+          <th>Komentar</th>
+        </tr>
+        <tr>
+          <td>Renge Renge Miyauchi</td>
+          <td>renge@gmail.com</td>
+          <td>08123456789</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            illum!
+          </td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <p>
+        created with love by <a href="https://github.com/RezaR2P">RezaR2P</a>
+      </p>
+    </footer>
   </body>
-  <script>
-    console.log("Hello World!!!");
-  </script>
 </html>
