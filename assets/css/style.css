@@ -1,0 +1,114 @@
+/* CSS RESET */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+img,
+nav,
+table,
+th,
+td,
+input,
+textarea,
+form,
+label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Akhir CSS RESET */
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Custom link hover color */
+.nav-link:hover {
+  text-decoration: underline;
+  color: #fff !important;
+}
+
+/* Form submit button hover */
+.btn-dark:hover {
+  background-color: #555;
+}
+
+/* Image link hover effect */
+.gambar a img {
+  transition: border-color 0.3s;
+}
+
+.gambar a:hover img {
+  border-color: #333;
+}
+
+/* Responsive styling */
+/* tablet */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 15px 0;
+  }
+}
+
+/* HP */
+@media (max-width: 480px) {
+  header {
+    padding: 15px 0;
+  }
+
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .gambar a img {
+    width: 150px;
+    height: 150px;
+  }
+
+  form {
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  form input,
+  form textarea {
+    padding: 8px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 10px 0;
+  }
+}

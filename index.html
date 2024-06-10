@@ -4,72 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anime</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header id="home">
+    <header id="home" class="bg-dark text-white text-center py-4">
       <img
-        src="img/renge.jpg"
+        src="assets/img/renge.jpg"
         alt="Logo"
-        style="border-radius: 50%"
-        width="100px"
-        height="100px"
+        class="rounded-circle"
+        width="100"
+        height="100"
       />
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav justify-content-center">
+        <a class="nav-link text-white" href="#home">Home</a>
+        <a class="nav-link text-white" href="#about">About</a>
+        <a class="nav-link text-white" href="#services">Services</a>
+        <a class="nav-link text-white" href="#contact">Contact</a>
       </nav>
     </header>
-    <main id="about">
-      <a href="https://www.instagram.com/sjhdskd/">
-        <img
-          src="img/Nyanpasu.jpg"
-          alt="Renge"
-          style="width: 200px; height: 200px"
-      /></a>
-      <form action="" id="contact">
-        <label for="nama">Nama</label>
-        <input type="text" name="nama" id="nama" /><br />
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" /><br />
-        <label for="number">No HP</label>
-        <input
-          type="text"
-          name="number"
-          id="number"
-          pattern="\d*"
-          required
-        /><br />
-        <label for="komentar">Komentar</label>
-        <textarea name="komentar" id="komentar" cols="20" rows="2"></textarea
-        ><br />
-        <input type="submit" value="Kirim" /><br />
+
+    <main id="about" class="container mt-3">
+      <div class="gambar d-flex justify-content-center">
+        <a
+          href="https://www.instagram.com/sjhdskd/"
+          class="d-flex justify-content-center w-25 mb-3"
+        >
+          <img
+            src="assets/img/Nyanpasu.jpg"
+            alt="Renge"
+            class="img-fluid rounded-4"
+          />
+        </a>
+      </div>
+
+      <form action="" id="contact" class="bg-white p-4 rounded shadow-sm">
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input type="text" name="nama" id="nama" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="number">No HP</label>
+          <input
+            type="text"
+            name="number"
+            id="number"
+            pattern="\d*"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="komentar">Komentar</label>
+          <textarea
+            name="komentar"
+            id="komentar"
+            cols="20"
+            rows="2"
+            class="form-control"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Kirim</button>
       </form>
 
-      <table id="services">
-        <tr>
-          <th>Nama</th>
-          <th>Email</th>
-          <th>Number</th>
-          <th>Komentar</th>
-        </tr>
-        <tr>
-          <td>Renge Renge Miyauchi</td>
-          <td>renge@gmail.com</td>
-          <td>08123456789</td>
-          <td>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-            illum!
-          </td>
-        </tr>
+      <table id="services" class="table table-striped mt-5">
+        <thead class="thead-dark">
+          <tr>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>Komentar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Renge Renge Miyauchi</td>
+            <td>renge@gmail.com</td>
+            <td>08123456789</td>
+            <td>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              illum!
+            </td>
+          </tr>
+        </tbody>
       </table>
     </main>
-    <footer id="contact">
+    <footer id="contact" class="bg-dark text-white text-center py-4">
       <p id="copyright">
-        created with love by <a href="https://github.com/RezaR2P">RezaR2P</a>
+        Created with <i class="bi bi-suit-heart-fill text-danger"></i> by
+        <a
+          href="https://github.com/RezaR2P"
+          data-toggle="tooltip"
+          title="Visit my GitHub profile"
+          >RezaR2P</a
+        >
       </p>
     </footer>
+
+    <!-- Bootstrap JS, jQuery, and Popper.js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
