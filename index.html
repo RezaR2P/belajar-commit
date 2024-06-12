@@ -43,7 +43,7 @@
         </a>
       </div>
 
-      <form action="" id="contact" class="bg-white p-4 rounded shadow-sm">
+      <form action="" id="table-form" class="bg-white p-4 rounded shadow-sm">
         <div class="form-group">
           <label for="nama">Nama</label>
           <input type="text" name="nama" id="nama" class="form-control" />
@@ -61,6 +61,7 @@
             pattern="\d{12,}"
             required
             class="form-control"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
           />
         </div>
         <div class="form-group">
@@ -86,24 +87,19 @@
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- <tr>
-            <td>Renge Renge Miyauchi</td>
-            <td>renge@gmail.com</td>
-            <td>08123456789</td>
-            <td>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-              illum!
-            </td>
-          </tr> -->
-        </tbody>
+        <tbody id="data-table"></tbody>
       </table>
       <div id="temp-conversion" class="bg-light p-4 rounded shadow-sm mt-5">
         <h3>Convert Fahrenheit to Celsius</h3>
         <form id="conversion-form">
           <div class="form-group">
             <label for="fahrenheit">Fahrenheit</label>
-            <input type="text" id="fahrenheit" class="form-control" />
+            <input
+              type="text"
+              id="fahrenheit"
+              class="form-control"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '')"
+            />
           </div>
           <button type="submit" class="btn btn-dark mt-2">Convert</button>
         </form>
