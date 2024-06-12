@@ -58,7 +58,7 @@
             type="text"
             name="number"
             id="number"
-            pattern="\d*"
+            pattern="\d{12,}"
             required
             class="form-control"
           />
@@ -83,10 +83,11 @@
             <th>Email</th>
             <th>Number</th>
             <th>Komentar</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <!-- <tr>
             <td>Renge Renge Miyauchi</td>
             <td>renge@gmail.com</td>
             <td>08123456789</td>
@@ -94,10 +95,22 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
               illum!
             </td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
+      <div id="temp-conversion" class="bg-light p-4 rounded shadow-sm mt-5">
+        <h3>Convert Fahrenheit to Celsius</h3>
+        <form id="conversion-form">
+          <div class="form-group">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="text" id="fahrenheit" class="form-control" />
+          </div>
+          <button type="submit" class="btn btn-dark mt-2">Convert</button>
+        </form>
+        <div id="result" class="mt-3"></div>
+      </div>
     </main>
+
     <footer id="contact" class="bg-dark text-white text-center py-4">
       <p id="copyright">
         Created with <i class="bi bi-suit-heart-fill text-danger"></i> by
@@ -108,11 +121,13 @@
           >RezaR2P</a
         >
       </p>
+      <div id="clock" class="mt-3"></div>
     </footer>
 
     <!-- Bootstrap JS, jQuery, and Popper.js -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
