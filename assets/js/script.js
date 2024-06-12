@@ -51,18 +51,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     saveToLocalStorage(data);
     renderTable();
     document.getElementById("table-form").reset(); // Reset form inputs after submit
-
-    // Tampilkan pesan berhasil menggunakan alert
     alert("Form berhasil dikirim!");
 
-    // Tambahkan pesan "Form berhasil dikirim!" di dalam DOM
     const successMessage = document.createElement("div");
     successMessage.classList.add("alert", "alert-success", "mt-3");
     successMessage.setAttribute("role", "alert");
     successMessage.textContent = "Form berhasil dikirim!";
     document.getElementById("table-form").appendChild(successMessage);
 
-    // Hapus pesan setelah beberapa detik
     setTimeout(() => {
       successMessage.remove();
     }, 3000);
@@ -137,7 +133,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     return num < 10 ? `0${num}` : num;
   };
 
-  setInterval(updateClock, 1000); // Update clock every second
+  setInterval(updateClock, 1000);
 
   document.getElementById("table-form").onsubmit = handleFormSubmit;
   document.getElementById("conversion-form").onsubmit = convertTemperature;
